@@ -2,7 +2,7 @@
 FROM gradle:7.6.0-jdk17 AS build
 WORKDIR /app
 RUN apt-get update && apt-get install -y git
-RUN git clone https://github.com/jw-park-github/backend-version3-main.git .
+RUN git clone https://github.com/park-jw-github/backend-version3-main.git .
 RUN gradle bootJar
 
 # Stage 2: Run
